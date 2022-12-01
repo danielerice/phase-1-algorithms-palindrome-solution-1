@@ -1,5 +1,14 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  if (typeof word===`string`) {
+    let backwardsWord = ``
+    for (i = 0; i < word.length; i++) {
+       char = word.charAt(i);
+       backwardsWord = char+backwardsWord;
+    }
+     return word === backwardsWord
+   } else {
+      return false;
+   }
 }
 
 /* 
